@@ -973,8 +973,9 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <!-- <form action="" method="POST" role="form" class="php-email-form" onsubmit="contactForm()"> -->
+            <form action="https://api.web3forms.com/submit" method="POST" role="form" class="php-email-form" onsubmit="contactForm()">
+              <input type="hidden" name="access_key" value="6dd49f32-7738-464e-8699-78ae4fd8dde6">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -992,11 +993,27 @@
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message">   </div>
+                <div class="error-message success"> </div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+            <script>
+              function contactForm(e){
+                let name = document.querySelector('#name').value;
 
+                [...document.querySelectorAll('input'), ...document.querySelectorAll('textarea')].forEach((x) =>{
+                  x.value = ''
+                })
+
+                document.querySelector('.error-message.success').classList.add('open')
+                document.querySelector('.error-message.success').innerHTML = `Thank you for your message ${name}!!!`
+
+                setTimeout(()=> {
+                  document.querySelector('.error-message.success').classList.remove('open')
+                }, 2000)
+              }
+            </script>
           </div>
 
         </div>

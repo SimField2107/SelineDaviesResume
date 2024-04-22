@@ -1229,12 +1229,25 @@ section {
 }
 
 .contact .php-email-form .error-message {
-  display: none;
+  display: none !important;
+  opacity: 0;
   color: #fff;
-  background: #ed3c0d;
+  background: green;
   text-align: left;
   padding: 15px;
   font-weight: 600;
+  transition: 0.2s;
+
+}
+
+.contact .php-email-form .error-message.success {
+  display: unset !important;
+}
+
+.contact .php-email-form .error-message.open{
+  /* display: unset !important; */
+  max-height: 5000px;
+  opacity: 1;
 }
 
 .contact .php-email-form .error-message br+br {
