@@ -1385,6 +1385,58 @@ section {
 
 
 
+/* Brands Section */
+.brands {
+  padding: 60px 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(164, 188, 203, 1) 0%,     /* Top Blueish Color */
+    rgba(240, 234, 214, 1) 50%,    /* Middle Eggshell White */
+    rgba(144, 168, 183, 1) 100%    /* Bottom Blueish Color (slightly darker) */
+  );
+  color: #333;
+}
+
+
+
+.brands .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+  color: #444;
+}
+
+.brands .brands-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.brands .brands-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brands .brands-list li {
+  margin: 15px;
+}
+
+.brands .brands-list img {
+  max-width: 150px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.brands .brands-list img:hover {
+  opacity: 1;
+}
 
 
 
