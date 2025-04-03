@@ -63,10 +63,6 @@ h6 {
 
 
 
-
-
-
-
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -455,70 +451,13 @@ section {
 
 
 
-
-
-
-
-
 .image-collage {
   opacity: 0.9; /* Adjust the opacity value (from 0 to 1) */
 }
 
 .image-collage img {
-  border-radius: 10%; /* Make the image circular */
+  /* border-radius: 10%; */
 }
-
-
-
-
-/* Collage  */
-
-/* .image-collage {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.image-collage img {
-  position: absolute;
-  transition: all 0.3s ease;
-}
-
-.image-collage .img-1 {
-  top: 0;
-  left: 0;
-  z-index: 3;
-  transform: rotate(-45deg); /* Tilt left by 45 degrees */
-/* } */
-
-/* .image-collage .img-2 {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(5deg); /* Slight tilt right */
-  /* z-index: 2; */
-/* } */
-
-/* .image-collage .img-3 {
-  top: 100%;
-  left: 100%;
-  transform: translate(-100%, -100%) rotate(45deg); /* Tilt right by 45 degrees */
-  /* z-index: 1; */
-/* } */
-
-/* .image-collage img:hover {
-  transform: scale(1.2) rotate(0); /* Reset rotation and scale on hover */
-  /* z-index: 4; */
-/* } */
-
-/* .image-collage img:not(:hover) {
-  opacity: 0.5; /* Make non-hovered images transparent */
-  /* transform: scale(0.8); /* Shrink non-hovered images */
-/* } */ 
-
-
-
-
-
 
 
 
@@ -946,6 +885,23 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
+
+
+
+.portfolio-details .portfolio-details-slider video {
+  width: 100%;         
+  display: block;
+  margin: 0 auto;     /* Center horizontally */
+  object-fit: cover;  /* Optional: controls how the video fills its box */
+}
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Services
@@ -1441,4 +1397,375 @@ section {
 
 
 
+/* Modals */
 
+#grid-section .container-fluid {
+  background-color: #9ebccd; 
+  background-image: url("../img/background-2.png");
+  padding: 40px 0; /* Optional: Adds some spacing */
+}
+.logo-img {
+  position: relative;  /* Establishes a stacking context */
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  z-index: 2;
+}
+
+
+
+/* The overall section can have spacing if you want: */
+.grid-section {
+  padding: 0px 0;
+}
+
+
+.grid-square {
+  min-height: 450px; 
+  cursor: pointer;
+  position: relative;
+  border: 3px dashed #999; /* dashed “cut-out lines” look */
+  overflow: hidden; 
+}
+
+/* Standardize logo size inside grid squares */
+.grid-square .logo-img {
+  width: 200px;        /* Fixed width */
+  height: 200px;       /* Fixed height */
+  max-width: 200px;    /* Ensure no logo exceeds 150px */
+  max-height: 200px;   /* Ensure no logo exceeds 150px */
+  object-fit: contain; /* Scale the image while preserving aspect ratio */
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  z-index: 10;
+}
+
+/* Hover Effect: Grow slightly */
+.grid-square .logo-img:hover {
+  transform: scale(1.2); /* Enlarges the logo to 120% of its original size */
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3)); /* Enhanced shadow effect */
+}
+
+.logo-big {
+  width: 300px !important;
+  height: 300px !important;
+  max-width: 300px !important;
+  max-height: 300px !important;
+  object-fit: contain;
+  z-index: 2;
+}
+
+
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure the video covers the whole square */
+  z-index: 0; /* Ensures it stays behind the logo */
+}
+
+
+
+/* // 1. Barbie */
+
+.grid-square:nth-child(1) {
+  background-color:  #FF3EB5;; /* Barbie pink */
+  background-image: url("../img/client-work /barbie-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Needed for the overlay */
+}
+
+.grid-square:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Using RGBA for a transparent yellow overlay */
+  background-color: rgba(255, 62, 181, 0.6);
+  pointer-events: none; /* So clicks pass through to the square */
+}
+
+
+
+/* 2. Minor Figures */
+
+.grid-square:nth-child(2) {
+  background-color:#09428f; 
+   /* #3fc3eb; Minor Figures pale blue */
+  /* #09428f dark blue  */
+  background-image: url("../img/client-work /minor-figures-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 66, 143, 0.6);
+  pointer-events: none; /* So clicks pass through to the square */
+}
+
+
+
+/* 3. Mikes Hard Lemonade */
+
+.grid-square:nth-child(3) {
+  background-image: url("../img/client-work /mikes-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Needed for the overlay */
+}
+
+.grid-square:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Using RGBA for a transparent yellow overlay */
+  background-color: rgba(255, 255, 0, 0.549); /* Adjust the opacity as needed */
+  pointer-events: none; /* So clicks pass through to the square */
+}
+
+
+/* 4. Jam Shed */
+
+.grid-square:nth-child(4) {
+  background-color: #FFDAB9; 
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Needed for the overlay */
+}
+
+.grid-square:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(213, 0, 89, 0.681); /* Slightly transparent red */
+  z-index: 1; /* Higher than video but lower than logo */
+  pointer-events: none; /* Allows interaction with logo */
+}
+
+
+
+/* 4. Skittles */
+
+.grid-square:nth-child(5) {
+  background-image: url("../img/client-work /skittles-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Needed for the overlay */
+}
+
+.grid-square:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 180, 175, 0.6);
+
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+
+
+.grid-square:nth-child(6) {
+  background-image: url("../img/client-work /popworks-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Needed for the overlay */
+}
+
+.grid-square:nth-child(6)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(231, 189, 201, 0.7);
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+
+/* 7. Malfy Gin */
+
+.grid-square:nth-child(7) {
+  background-image: url("../img/client-work /malfy-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(7)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 183, 216, 0.6);
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+/* 8. Terlato */
+
+.grid-square:nth-child(8) {
+  background-image: url("../img/client-work /terlato-bgg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Needed for the overlay */
+}
+
+.grid-square:nth-child(8)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(149, 140, 116, 0.7); /* Adjust opacity for shininess */
+
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+/* For bigger screens, you may want them truly square:
+   .grid-square {
+       aspect-ratio: 1 / 1; 
+   }
+   But note aspect-ratio is not supported on older browsers. 
+*/
+
+
+
+/* Widget Container */
+.scrolling-widget {
+  width: 100%;
+  background-color: #9ebccd; 
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../img/background-2.png");
+}
+
+/* Marquee Container */
+.marquee-container {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Marquee Content (Images) */
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between images */
+  animation: marquee-animation 35s linear infinite;
+}
+
+/* Marquee Images */
+.marquee-content img {
+  max-height: 80px; /* Adjust image height */
+  width: auto; /* Maintain aspect ratio */
+  display: inline-block;
+  filter: brightness(0.9); /* Slight dark effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.marquee-content img:hover {
+  transform: scale(1.1); /* Slightly enlarge */
+  filter: brightness(1.2);
+}
+
+/* Infinite Scrolling Effect */
+@keyframes marquee-animation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+/* AI Section Container */
+#ai-section {
+  padding: 40px 0;
+  background-color: #9ebccd;
+}
+
+/* Title styling */
+#ai-section .section-title {
+  margin-bottom: 30px;
+}
+
+/* Row styling */
+#ai-section .ai-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+#ai-section .ai-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Column styling */
+#ai-section .ai-col {
+  padding: 20px;
+}
+
+/* Row 1: First column 35%, second column 65% */
+#ai-section .row-1 .col-35 {
+  flex: 0 0 35%;
+  background-color: #FFB6C1; /* Pastel Pink */
+}
+#ai-section .row-1 .col-65 {
+  flex: 0 0 65%;
+  background-color: #ADD8E6; /* Pastel Blue */
+}
+
+/* Row 2: First column 65%, second column 35% */
+#ai-section .row-2 .col-65 {
+  flex: 0 0 65%;
+  background-color: #FF6961; /* Pastel Red */
+}
+#ai-section .row-2 .col-35 {
+  flex: 0 0 35%;
+  background-color: #FFFACD; /* Pastel Yellow */
+}
+
+.video-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
