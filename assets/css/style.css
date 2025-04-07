@@ -1750,26 +1750,36 @@ section {
 /* Row 1: First column 35%, second column 65% */
 #ai-section .row-1 .col-35 {
   flex: 0 0 35%;
-  background-color: #FFB6C1; /* Pastel Pink */
+  background-color: #FFB6C1; 
 }
 #ai-section .row-1 .col-65 {
   flex: 0 0 65%;
-  background-color: #ADD8E6; /* Pastel Blue */
+  background-color: #ADD8E6; 
 }
 
 /* Row 2: First column 65%, second column 35% */
 #ai-section .row-2 .col-65 {
   flex: 0 0 65%;
-  background-color: #FF6961; /* Pastel Red */
+  background-color: #FF6961; 
 }
 #ai-section .row-2 .col-35 {
   flex: 0 0 35%;
-  background-color: #FFFACD; /* Pastel Yellow */
+  background-color: #FFFACD; 
 }
+
+#ai-section h2 {
+   font-family: "Raleway", sans-serif !important;
+   font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #45505b;
+}
+
 
 .video-fluid {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px; /* Optional: Adds rounded corners */
+  border-radius: 8px; 
 }
