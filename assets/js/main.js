@@ -206,7 +206,7 @@ Main JS
     height: '90vh'
   });
 
-  /**
+/**
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {
@@ -220,6 +220,11 @@ Main JS
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
+    },
+   
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     }
   });
 
