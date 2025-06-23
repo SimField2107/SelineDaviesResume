@@ -1827,3 +1827,54 @@ section {
     font-size: 20px;
     font-weight: 900;
 }
+
+
+/*--------------------------------------------------------------
+# Portfolio Details > Typography & Layout Fixes
+--------------------------------------------------------------*/
+
+/* --- Main Information Box --- */
+.portfolio-details .portfolio-info {
+    padding: 25px;
+}
+
+/* --- Project Name (e.g., "PepsoCo & Pop Works") --- */
+.portfolio-details .portfolio-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+   
+}
+
+/* --- Project Title (e.g., "Bridget Jones on pack...") --- */
+.portfolio-details .portfolio-info h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+  
+}
+
+/* --- Details List (Client brief, Project date, URL) --- */
+.portfolio-details .portfolio-info ul {
+    line-height: 1.6;
+}
+
+.portfolio-details .portfolio-info ul li {
+    margin-bottom: 12px;
+}
+
+/* --- THE LINK FIX: For the Project URL --- */
+.portfolio-details .portfolio-info ul a {
+    word-break: break-all;
+}
+
+/* --- "Built with" and Description Text --- */
+.portfolio-details .portfolio-info .small-text {
+    line-height: 1.7;
+    font-size: 15px;
+}
