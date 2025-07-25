@@ -1725,6 +1725,50 @@ section {
 
 
 
+/* 13. Lego */
+
+.grid-square:nth-child(13) {
+    background-image: url("../img/client-work /lego-bg.png");
+    background-size: 150%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(13)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 236, 62, 0.7); 
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* 14. Lego */
+
+.grid-square:nth-child(14) {
+    background-image: url("../img/client-work /smyths-bg.png");
+    background-size: 150%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(14)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 236, 62, 0.7);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+
 
 
 /* Widget Container */
