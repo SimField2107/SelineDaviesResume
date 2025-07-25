@@ -1741,12 +1741,12 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(245, 236, 62, 0.7); 
+    background-color: rgba(245, 236, 62, 0.7);
     z-index: 1;
     pointer-events: none;
 }
 
-/* 14. Lego */
+/* 14. Smyths */
 
 .grid-square:nth-child(14) {
     background-image: url("../img/client-work /smyths-bg.png");
@@ -1762,7 +1762,8 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(245, 236, 62, 0.7);
+    background-color: rgba(0, 134, 175, 0.7);
+    /* background-color: rgba(245, 236, 62, 0.7); */
     z-index: 1;
     pointer-events: none;
 }
