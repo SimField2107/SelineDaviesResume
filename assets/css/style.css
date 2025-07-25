@@ -143,12 +143,11 @@ h6 {
   }
 } */
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+
+/* Navigation Menu */
+
+/*  Desktop Navigation */
+
 .nav-menu {
   padding: 0;
   display: block;
@@ -233,9 +232,9 @@ h6 {
   display: block;
 }
 
-/**
-* Mobile Navigation 
-*/
+
+/*  Mobile Navigation  */
+
 .mobile-nav-toggle {
   position: fixed;
   right: 10px;
@@ -269,9 +268,9 @@ h6 {
   background-color: #0563bb;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+
+/* # Hero Section */
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -350,9 +349,9 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+
+/* # Sections General */
+
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -404,11 +403,8 @@ section {
 
 
 
+/* # About */
 
-
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -441,22 +437,17 @@ section {
   margin-bottom: 0;
 }
 
-/* --------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+
 .background-section {
   background-image: url("../img/background-about.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.9; /* Adjust the opacity value (from 0 to 1) */
+  opacity: 0.9; 
 }
 
-
-
-
 .image-collage {
-  opacity: 0.9; /* Adjust the opacity value (from 0 to 1) */
+  opacity: 0.9; 
 }
 
 .image-collage img {
@@ -466,9 +457,9 @@ section {
 
 
 
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
+
+/* # Facts */
+
 .facts .count-box {
   padding: 30px 30px 25px 30px;
   margin-top: 30px;
@@ -508,9 +499,9 @@ section {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
+
+/* # Skills */
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -544,9 +535,9 @@ section {
   background-color: #0563bb;
 }
 
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
+
+/* # Resume */
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -605,27 +596,19 @@ section {
   border: 2px solid #0563bb;
 }
 
-/* --------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
 .Resume-background-section {
   background-image: url("../img/background-about.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.9;  /* Adjust the opacity value (from 0 to 1) */
+  opacity: 0.9;  
 }
 
 
 
 
+/* # Portfolio */
 
-
-
-
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
 
 /* Scroll bar  */
 
@@ -662,8 +645,6 @@ section {
   margin: 0 auto; 
   max-width: 1100px;
 }
-
-
 
 
 .portfolio .portfolio-item {
@@ -825,9 +806,9 @@ section {
 
 
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
+
+/* # Portfolio Details */
+
 .portfolio-details {
   padding-top: 40px;
 }
@@ -896,7 +877,7 @@ section {
 .portfolio-details .portfolio-details-slider video {
   width: 100%;         
   display: block;
-  margin: 0 auto;     /* Center horizontally */
+  margin: 0 auto;     
   object-fit: cover;  /* Optional: controls how the video fills its box */
 }
 
@@ -907,9 +888,9 @@ section {
 
 
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
+
+/* # Services */
+
 
 .services {
   background-color: #9ebccd; 
@@ -1047,9 +1028,11 @@ section {
   fill: #11dbcf;
 }
 
-/*--------------------------------------------------------------
-# Referals
---------------------------------------------------------------*/
+
+
+
+/* # Referals */
+
 .testimonials .section-header {
   margin-bottom: 40px;
 }
@@ -1130,9 +1113,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+
+/* # Contact */
+
 .contact .info {
   width: 100%;
   background: #fff;
@@ -1281,9 +1264,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+
+/* # Footer */
+
 #footer {
   background: #f7f8f9;
   color: #45505b;
@@ -1340,8 +1323,6 @@ section {
 #footer .credits {
   font-size: 13px;
 }
-
-
 
 
 
@@ -1406,10 +1387,10 @@ section {
 #grid-section .container-fluid {
   background-color: #9ebccd; 
   background-image: url("../img/background-2.png");
-  padding: 40px 0; /* Optional: Adds some spacing */
+  padding: 40px 0; 
 }
 .logo-img {
-  position: relative;  /* Establishes a stacking context */
+  position: relative;  
   width: 200px;
   height: 200px;
   object-fit: contain;
@@ -1418,9 +1399,6 @@ section {
   z-index: 2;
 }
 
-
-
-/* The overall section can have spacing if you want: */
 .grid-section {
   padding: 0px 0;
 }
@@ -1436,10 +1414,10 @@ section {
 
 /* Standardize logo size inside grid squares */
 .grid-square .logo-img {
-  width: 200px;        /* Fixed width */
-  height: 200px;       /* Fixed height */
-  max-width: 200px;    /* Ensure no logo exceeds 150px */
-  max-height: 200px;   /* Ensure no logo exceeds 150px */
+  width: 200px;        
+  height: 200px;     
+  max-width: 200px;    
+  max-height: 200px;   
   object-fit: contain; /* Scale the image while preserving aspect ratio */
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.15));
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
@@ -1476,14 +1454,14 @@ section {
 
 
 
-/* // 1. Barbie */
+/* 1. Barbie */
 
 .grid-square:nth-child(1) {
-  background-color:  #FF3EB5;; /* Barbie pink */
+  background-color:  #FF3EB5;; 
   background-image: url("../img/client-work /barbie-bg.png");
   background-size: cover;
   background-position: center;
-  position: relative; /* Needed for the overlay */
+  position: relative; 
 }
 
 .grid-square:nth-child(1)::before {
@@ -1493,9 +1471,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  /* Using RGBA for a transparent yellow overlay */
   background-color: rgba(255, 62, 181, 0.6);
-  pointer-events: none; /* So clicks pass through to the square */
+  pointer-events: none; 
 }
 
 
@@ -1520,7 +1497,7 @@ section {
   width: 100%;
   height: 100%;
   background-color: rgba(9, 66, 143, 0.6);
-  pointer-events: none; /* So clicks pass through to the square */
+  pointer-events: none; 
 }
 
 
@@ -1531,7 +1508,7 @@ section {
   background-image: url("../img/client-work /mikes-bg.png");
   background-size: cover;
   background-position: center;
-  position: relative; /* Needed for the overlay */
+  position: relative; 
 }
 
 .grid-square:nth-child(3)::before {
@@ -1541,9 +1518,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  /* Using RGBA for a transparent yellow overlay */
-  background-color: rgba(255, 255, 0, 0.549); /* Adjust the opacity as needed */
-  pointer-events: none; /* So clicks pass through to the square */
+  background-color: rgba(255, 255, 0, 0.549); 
+  pointer-events: none; 
 }
 
 
@@ -1553,7 +1529,7 @@ section {
   background-color: #FFDAB9; 
   background-size: cover;
   background-position: center;
-  position: relative; /* Needed for the overlay */
+  position: relative; 
 }
 
 .grid-square:nth-child(4)::before {
@@ -1563,9 +1539,9 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(213, 0, 89, 0.681); /* Slightly transparent red */
+  background-color: rgba(213, 0, 89, 0.681); 
   z-index: 1; /* Higher than video but lower than logo */
-  pointer-events: none; /* Allows interaction with logo */
+  pointer-events: none; 
 }
 
 
@@ -1576,7 +1552,7 @@ section {
   background-image: url("../img/client-work /skittles-bg.png");
   background-size: cover;
   background-position: center;
-  position: relative; /* Needed for the overlay */
+  position: relative; 
 }
 
 .grid-square:nth-child(5)::before {
@@ -1599,7 +1575,7 @@ section {
   background-image: url("../img/client-work /popworks-bg.png");
   background-size: cover;
   background-position: center;
-  position: relative; /* Needed for the overlay */
+  position: relative; 
 }
 
 .grid-square:nth-child(6)::before {
@@ -1644,7 +1620,7 @@ section {
   background-image: url("../img/client-work /terlato-bgg.png");
   background-size: cover;
   background-position: center;
-  position: relative; /* Needed for the overlay */
+  position: relative; 
 }
 
 .grid-square:nth-child(8)::before {
@@ -1654,17 +1630,12 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(149, 140, 116, 0.7); /* Adjust opacity for shininess */
+  background-color: rgba(149, 140, 116, 0.7); 
   z-index: 1; 
   pointer-events: none; 
 }
 
-/* For bigger screens, you may want them truly square:
-   .grid-square {
-       aspect-ratio: 1 / 1; 
-   }
-   But note aspect-ratio is not supported on older browsers. 
-*/
+
 
 /* 9. Laphroaig*/
 
@@ -1753,6 +1724,9 @@ section {
 }
 
 
+
+
+
 /* Widget Container */
 .scrolling-widget {
   width: 100%;
@@ -1780,8 +1754,8 @@ section {
 
 /* Marquee Images */
 .marquee-content img {
-  max-height: 80px; /* Adjust image height */
-  width: auto; /* Maintain aspect ratio */
+  max-height: 80px; 
+  width: auto; 
   display: inline-block;
   filter: brightness(0.9); /* Slight dark effect */
   transition: transform 0.3s ease-in-out;
@@ -1868,7 +1842,7 @@ section {
   border-radius: 8px; 
 }
 
-/* --- FIX for Image Sizing and Carousel Arrows --- */
+/* FIX for Image Sizing and Carousel Arrows */
 
 .portfolio-details .portfolio-details-slider {
     /* Set a consistent height for the slider container */
@@ -1913,9 +1887,9 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Portfolio Details > Typography & Layout Fixes
---------------------------------------------------------------*/
+
+/* # Portfolio Details > Typography & Layout Fixes */
+
 
 /* --- Main Information Box --- */
 .portfolio-details .portfolio-info {
