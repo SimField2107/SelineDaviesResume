@@ -1768,6 +1768,27 @@ section {
     pointer-events: none;
 }
 
+/* 15. Whitworths */
+
+.grid-square:nth-child(15) {
+    background-image: url("../img/client-work /whitworths-bg.png");
+    background-size: 200%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(15)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(237, 27, 77, 0.7), rgba(237, 29, 143, 0.7));
+    z-index: 1;
+    pointer-events: none;
+}
+
 
 
 
