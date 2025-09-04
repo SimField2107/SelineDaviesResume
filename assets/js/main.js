@@ -263,4 +263,27 @@ Main JS
    */
   new PureCounter();
 
+  /**
+   * AI Project Card Expander
+   */
+  document.addEventListener('DOMContentLoaded', () => {
+    const learnMoreButtons = document.querySelectorAll('.ai-section .btn-view-project');
+
+    learnMoreButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Find the details panel within the same project card
+        const detailsPanel = button.nextElementSibling;
+        detailsPanel.classList.toggle('expanded');
+        button.classList.toggle('active');
+
+        // Change the button text and icon
+        if (detailsPanel.classList.contains('expanded')) {
+          button.innerHTML = 'Show Less <i class="icon-arrow bx bx-chevron-up"></i>';
+        } else {
+          button.innerHTML = 'Learn More <i class="icon-arrow bx bx-chevron-down"></i>';
+        }
+      });
+    });
+  });
+
 })()
