@@ -758,13 +758,13 @@ section {
     height: auto; 
   }
 
-  /* Style each project panel as a distinct card */
   .accordion-panel {
-    height: 500px; 
-    margin-bottom: 0px; 
-    border-radius: 0;
-    filter: none; 
-  }
+  aspect-ratio: 4 / 3; 
+  width: 100%; 
+  margin-bottom: 0px;
+  border-radius: 0;
+  filter: none;
+}
 
   /* This creates the subtle gradient shadow between sections */
   .portfolio.section-bg {
