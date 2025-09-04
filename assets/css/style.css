@@ -753,33 +753,54 @@ section {
 
 
 @media (max-width: 768px) {
-
   .accordion-gallery-full {
-    flex-direction: column; 
-    height: 80vh;
+    display: block; 
+    height: auto; 
   }
 
+  /* Style each project panel as a distinct card */
   .accordion-panel {
-    flex: 0 0 80px; 
+    height: 600px; 
+    margin-bottom: 0px; 
+    border-radius: 0;
+    filter: none; 
   }
 
-  .accordion-panel.active {
-    flex: 1 1 auto;
+  /* This creates the subtle gradient shadow between sections */
+  .portfolio.section-bg {
+    background: linear-gradient(to bottom, #e9ecef, #dee2e6); /* Light gray gradient */
+    padding-bottom: 0;
+  }
+  
+  /* Ensure text, icon, and overlay are always visible */
+  .accordion-panel::after,
+  .accordion-panel.active::after {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(44, 62, 80, 0.8) 0%, rgba(44, 62, 80, 0.1) 70%);
+  }
+  
+  .accordion-panel h3,
+  .accordion-panel .panel-icon {
+    opacity: 1;
+    transform: none;
   }
 
+  /* Final positioning for the text and icon */
+  .panel-icon {
+    transform: translate(-50%, -50%);
+    font-size: 44px;
+  }
+  
   .accordion-panel h3 {
-    font-size: 22px;
+    bottom: 25px;
+    font-size: 24px;
   }
 
-  .accordion-panel::after {
-    background: linear-gradient(
-      to top,
-      rgba(44, 62, 80, 0.7) 0%,
-      rgba(44, 62, 80, 0) 50%
-    );
+  /* Remove any remaining active/hover states */
+  .accordion-panel.active {
+    flex-grow: 1;
   }
 }
-
 
 
 
