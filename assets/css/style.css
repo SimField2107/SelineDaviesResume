@@ -804,83 +804,30 @@ section {
 
 
 
-/* # Portfolio Details */
+/* Portfolio Details - Simplified            */
 
-.portfolio-details {
-  padding-top: 40px;
+/* The Main Pop-up Background  */
+.goverlay {
+  background: linear-gradient( to bottom, rgba(164, 188, 203, 0.95) 0%, rgba(240, 234, 214, 0.95) 100% );
 }
 
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #0563bb;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0563bb;
-}
-
-.portfolio-details .portfolio-info {
+/* --- The Single Content Card --- */
+.project-details-content {
+  background: #fff;
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-
-
-
-.portfolio-details .portfolio-details-slider video {
-  width: 100%;         
-  display: block;
-  margin: 0 auto;     
-  object-fit: cover;  /* Optional: controls how the video fills its box */
-}
-
-
-
-
+.project-details-content .portfolio-details-slider { margin-bottom: 20px; }
+.project-details-content .swiper-slide img { width: 100%; }
+.project-details-content h2 { font-size: 28px; font-weight: 700; color: #2c3e50; margin-bottom: 5px; }
+.project-details-content h4 { font-size: 14px; font-weight: 700; color: #0563bb; text-transform: uppercase; margin-bottom: 20px; }
+.project-details-content ul { list-style: none; padding: 0; margin-bottom: 20px; }
+.project-details-content h5 { font-size: 14px; font-weight: 700; color: #555; margin-bottom: 10px; }
+.project-details-content p { color: #555; }
 
 
 
