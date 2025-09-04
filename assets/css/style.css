@@ -749,7 +749,36 @@ section {
 }
 
 
+/* Portfolio Accordion - Mobile (Vertical) View      */
 
+
+@media (max-width: 768px) {
+
+  .accordion-gallery-full {
+    flex-direction: column; 
+    height: 80vh;
+  }
+
+  .accordion-panel {
+    flex: 0 0 80px; 
+  }
+
+  .accordion-panel.active {
+    flex: 1 1 auto;
+  }
+
+  .accordion-panel h3 {
+    font-size: 22px;
+  }
+
+  .accordion-panel::after {
+    background: linear-gradient(
+      to top,
+      rgba(44, 62, 80, 0.7) 0%,
+      rgba(44, 62, 80, 0) 50%
+    );
+  }
+}
 
 
 
