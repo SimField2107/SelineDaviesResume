@@ -760,7 +760,7 @@ section {
 
   /* Style each project panel as a distinct card */
   .accordion-panel {
-    height: 600px; 
+    height: 500px; 
     margin-bottom: 0px; 
     border-radius: 0;
     filter: none; 
