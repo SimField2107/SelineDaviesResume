@@ -286,4 +286,18 @@ Main JS
     });
   });
 
+  /**
+   * Portfolio Accordion Gallery
+   */
+  const accordionPanels = document.querySelectorAll('.accordion-panel');
+
+  accordionPanels.forEach(panel => {
+    panel.addEventListener('mouseover', () => {
+      // Remove active class from all other panels
+      accordionPanels.forEach(p => p.classList.remove('active'));
+      // Add active class to the one being hovered
+      panel.classList.add('active');
+    });
+  });
+
 })()
