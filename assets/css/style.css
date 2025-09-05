@@ -403,12 +403,17 @@ section {
 
 
 
-/* # About */
+
+/* About  */
 
 .about .content h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: #728394;
+  font-size: 28px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about .content p.fst-italic { 
+  line-height: 1.7;
+  max-width: 95%; 
 }
 
 .about .content ul {
@@ -417,20 +422,21 @@ section {
 }
 
 .about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
+  display: flex; 
+  align-items: baseline;
+  padding-bottom: 16px;
+  font-size: 15px;
 }
 
 .about .content ul strong {
-  margin-right: 10px;
+  min-width: 140px; 
+  color: #0563bb; 
 }
 
 .about .content ul i {
   font-size: 16px;
-  margin-right: 5px;
+  margin-right: 8px;
   color: #0563bb;
-  line-height: 0;
 }
 
 .about .content p:last-child {
@@ -446,12 +452,17 @@ section {
   opacity: 0.9; 
 }
 
+/* This is the container that creates the 3D space */
 .image-collage {
-  opacity: 0.9; 
+  perspective: 1000px; /* Adjust this value to change the "depth" of the effect */
 }
 
-.image-collage img {
-  /* border-radius: 10%; */
+/* This styles the image itself for the transformation */
+.image-collage .img-1 {
+  border-radius: 8px; 
+  transition: transform 0.1s ease-out; 
+  transform-style: preserve-3d;
+  will-change: transform; 
 }
 
 

@@ -300,5 +300,35 @@ Main JS
     });
   });
 
+  /**
+ * About Section 3D Tilt Effect
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  const tiltContainer = document.querySelector('.image-collage');
+  if (tiltContainer) {
+    const tiltElement = tiltContainer.querySelector('.img-1');
+    const maxTilt = 15; // Max tilt in degrees. Lower for a more subtle effect.
+
+    tiltContainer.addEventListener('mousemove', (e) => {
+      const rect = tiltContainer.getBoundingClientRect();
+      const x = e.clientX - rect.left; 
+      const y = e.clientY - rect.top;  
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const tiltX = (y - centerY) / centerY * -maxTilt; 
+      const tiltY = (x - centerX) / centerX * maxTilt;
+
+      tiltElement.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+    });
+
+    tiltContainer.addEventListener('mouseleave', () => {
+      // Reset the transform when the mouse leaves
+      tiltElement.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    });
+  }
+});
+
 
 })()
