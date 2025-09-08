@@ -113,6 +113,10 @@ body.theme-barbie {
 
 /* 2. Minor Figures */
 
+/* body.theme-minor-figures{
+  background-color:#3DC3EB
+} */
+
 .grid-square:nth-child(2) {
   background-color:#09428f; 
    /* #3fc3eb; Minor Figures pale blue */
