@@ -142,6 +142,10 @@ body.theme-barbie {
 
 /* 3. Mikes Hard Lemonade */
 
+/* body.theme-mikes{
+  background-color:#F1BA43
+} */
+
 .grid-square:nth-child(3) {
   background-image: url("../img/client-work /mikes-bg.png");
   background-size: cover;
