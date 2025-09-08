@@ -1,6 +1,5 @@
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+// Footer
+
 #footer {
   background: lighten($secondary, 66);
   color: $secondary;
@@ -26,6 +25,7 @@
 
   .social-links {
     margin: 0 0 40px 0;
+
     a {
       font-size: 18px;
       display: inline-block;
@@ -39,6 +39,7 @@
       width: 36px;
       height: 36px;
       transition: 0.3s;
+
       &:hover {
         background: lighten($primary, 8);
         color: #fff;

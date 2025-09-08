@@ -1,0 +1,445 @@
+
+
+/* 1. Barbie */
+
+.grid-square:nth-child(1) {
+  background-color:  #FF3EB5;; 
+  background-image: url("../img/client-work /barbie-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 62, 181, 0.6);
+  pointer-events: none; 
+}
+
+
+
+/* 2. Minor Figures */
+
+.grid-square:nth-child(2) {
+  background-color:#09428f; 
+   /* #3fc3eb; Minor Figures pale blue */
+  /* #09428f dark blue  */
+  background-image: url("../img/client-work /minor-figures-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 66, 143, 0.6);
+  pointer-events: none; 
+}
+
+
+
+/* 3. Mikes Hard Lemonade */
+
+.grid-square:nth-child(3) {
+  background-image: url("../img/client-work /mikes-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.549); 
+  pointer-events: none; 
+}
+
+
+/* 4. Jam Shed */
+
+.grid-square:nth-child(4) {
+  background-color: #FFDAB9; 
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(213, 0, 89, 0.681); 
+  z-index: 1; /* Higher than video but lower than logo */
+  pointer-events: none; 
+}
+
+
+
+/* 4. Skittles */
+
+.grid-square:nth-child(5) {
+  background-image: url("../img/client-work /skittles-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 180, 175, 0.6);
+
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+
+
+.grid-square:nth-child(6) {
+  background-image: url("../img/client-work /popworks-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(6)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(231, 189, 201, 0.7);
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+
+/* 7. Malfy Gin */
+
+.grid-square:nth-child(7) {
+  background-image: url("../img/client-work /malfy-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(7)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 183, 216, 0.6);
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+/* 8. Terlato */
+
+.grid-square:nth-child(8) {
+  background-image: url("../img/client-work /terlato-bgg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(8)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(149, 140, 116, 0.7); 
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+
+/* 9. Laphroaig*/
+
+.grid-square:nth-child(9) {
+  background-image: url("../img/client-work /laphroaig-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.grid-square:nth-child(9)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(207, 205, 205, 0.7);
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+/* 10. Coca-cola*/
+
+.grid-square:nth-child(10) {
+    background-image: url("../img/client-work /coca-cola-bg.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(10)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(220, 101, 101, 0.7);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* 11. Monster */
+
+.grid-square:nth-child(11) {
+    background-image: url("../img/client-details/monster/monster-1.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(11)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(148, 193, 31, 0.7);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* 12. Snickers */
+
+.grid-square:nth-child(12) {
+    background-image: url("../img/client-work /snickers-bg2.png");
+    background-size: 150%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(12)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(62, 19, 0, 0.7);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+
+/* 13. Lego */
+
+.grid-square:nth-child(13) {
+    background-image: url("../img/client-work /lego-bg.png");
+    background-size: 150%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(13)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 236, 62, 0.7);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* 14. Smyths */
+
+.grid-square:nth-child(14) {
+    background-image: url("../img/client-work /smyths-bg.png");
+    background-size: 150%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(14)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 134, 175, 0.7);
+    /* background-color: rgba(245, 236, 62, 0.7); */
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* 15. Whitworths */
+
+.grid-square:nth-child(15) {
+    background-image: url("../img/client-work /whitworths-bg.png");
+    background-size: 200%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(15)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(237, 27, 77, 0.7), rgba(237, 29, 143, 0.7));
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* 16. Richmond */
+
+.grid-square:nth-child(16) {
+    background-image: url("../img/client-work /richmond-bg-2.png");
+    background-size: 200%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(16)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 245, 189, 0.7);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* 17. Rubicon */
+
+.grid-square:nth-child(17) {
+    background-image: url("../img/client-work /rubicon-bg.png");
+    background-size: 200%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(17)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 177, 0, 0.7);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* 18. Pepsi */
+
+.grid-square:nth-child(18) {
+    background-image: url("../img/client-work /pepsi-bg.png");
+    background-size: 200%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(18)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 22, 137, 0.7);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* 19. Tropicana */
+
+.grid-square:nth-child(19) {
+    background-image: url("../img/client-work /tropicana-bg.png");
+    background-size: 200%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(19)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 108, 52, 0.847);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* 20. Doritos */
+
+.grid-square:nth-child(20) {
+    background-image: url("../img/client-work /doritos-bg.png");
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+}
+
+.grid-square:nth-child(20)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(206, 60, 55, 0.788);
+    z-index: 1;
+    pointer-events: none;
+}
+

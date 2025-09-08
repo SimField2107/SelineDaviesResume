@@ -1,0 +1,190 @@
+/* Projects  */
+
+/* The Main Pop-up Background  */
+.goverlay {
+  background: linear-gradient( to bottom, rgba(164, 188, 203, 0.95) 0%, rgba(240, 234, 214, 0.95) 100% );
+}
+
+/* --- The Single Content Card --- */
+.project-details-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-details-content .portfolio-details-slider { margin-bottom: 20px; }
+.project-details-content .swiper-slide img { width: 100%; }
+.project-details-content h2 { font-size: 28px; font-weight: 700; color: #2c3e50; margin-bottom: 5px; }
+.project-details-content h4 { font-size: 14px; font-weight: 700; color: #0563bb; text-transform: uppercase; margin-bottom: 20px; }
+.project-details-content ul { list-style: none; padding: 0; margin-bottom: 20px; }
+.project-details-content h5 { font-size: 14px; font-weight: 700; color: #555; margin-bottom: 10px; }
+.project-details-content p { color: #555; }
+
+/* Portfolio - Full-Width Dark Accordion  */
+
+
+.portfolio.section-bg {
+  background: linear-gradient(
+    to bottom,
+    rgba(164, 188, 203, 1) 0%,
+    rgba(240, 234, 214, 1) 50%,
+    rgba(144, 168, 183, 1) 100%
+  );
+  padding-bottom: 0;
+}
+
+.portfolio .section-title h2,
+.portfolio .section-title p {
+  color: #45505b; 
+}
+
+/* --- Main Layout --- */
+.accordion-gallery-full {
+  display: flex;
+  width: 100%;
+  height: 75vh; 
+  /* Note: No gap or container */
+}
+
+.accordion-panel {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: 
+    flex 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+    filter 0.5s ease-in-out;
+}
+
+/* --- Dark Mode & Hover Effects --- */
+
+/* By default, all panels are dark and desaturated */
+.accordion-panel {
+  filter: grayscale(80%) brightness(0.5);
+}
+
+/* The active (hovered) panel bursts into full color */
+.accordion-panel.active {
+  flex: 5;
+  filter: grayscale(0%) brightness(1);
+}
+
+/* --- Text and Icon Styling --- */
+
+.accordion-panel a {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 2;
+}
+
+.panel-icon {
+  font-size: 48px;
+  color: #fff;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.accordion-panel h3 {
+  color: white;
+  font-size: 28px; 
+  position: absolute;
+  bottom: 30px; 
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out 0.2s, transform 0.4s ease-out 0.2s;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.accordion-panel.active h3,
+.accordion-panel.active .panel-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.accordion-panel.active h3 {
+  transform: translateY(0);
+}
+
+/* --- Overlay --- */
+.accordion-panel::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(44, 62, 80, 0.65) 0%, 
+    rgba(44, 62, 80, 0) 60%   
+  );
+  opacity: 0; 
+  transition: opacity 0.6s ease;
+  z-index: 1;
+}
+
+.accordion-panel.active::after {
+  opacity: 1;
+}
+
+
+/* Portfolio Accordion - Mobile (Vertical) View      */
+
+
+@media (max-width: 768px) {
+  .accordion-gallery-full {
+    display: block; 
+    height: auto; 
+  }
+
+  .accordion-panel {
+  aspect-ratio: 4 / 3; 
+  width: 100%; 
+  margin-bottom: 0px;
+  border-radius: 0;
+  filter: none;
+}
+
+  /* This creates the subtle gradient shadow between sections */
+  .portfolio.section-bg {
+    background: linear-gradient(to bottom, #e9ecef, #dee2e6); /* Light gray gradient */
+    padding-bottom: 0;
+  }
+  
+  /* Ensure text, icon, and overlay are always visible */
+  .accordion-panel::after,
+  .accordion-panel.active::after {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(44, 62, 80, 0.8) 0%, rgba(44, 62, 80, 0.1) 70%);
+  }
+  
+  .accordion-panel h3,
+  .accordion-panel .panel-icon {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Final positioning for the text and icon */
+  .panel-icon {
+    transform: translate(-50%, -50%);
+    font-size: 44px;
+  }
+  
+  .accordion-panel h3 {
+    bottom: 25px;
+    font-size: 24px;
+  }
+
+  /* Remove any remaining active/hover states */
+  .accordion-panel.active {
+    flex-grow: 1;
+  }
+}

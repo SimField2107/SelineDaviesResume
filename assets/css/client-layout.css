@@ -1,0 +1,69 @@
+
+
+/* Client work layout */
+
+#grid-section .container-fluid {
+  background-color: #9ebccd; 
+  background-image: url("../img/background-2.png");
+  padding: 40px 0; 
+}
+.logo-img {
+  position: relative;  
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.grid-section {
+  padding: 0px 0;
+}
+
+
+.grid-square {
+  min-height: 450px; 
+  cursor: pointer;
+  position: relative;
+  border: 3px dashed #999; /* dashed “cut-out lines” look */
+  overflow: hidden; 
+}
+
+/* Standardize logo size inside grid squares */
+.grid-square .logo-img {
+  width: 200px;        
+  height: 200px;     
+  max-width: 200px;    
+  max-height: 200px;   
+  object-fit: contain; /* Scale the image while preserving aspect ratio */
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  z-index: 10;
+}
+
+/* Hover Effect: Grow slightly */
+.grid-square .logo-img:hover {
+  transform: scale(1.2); /* Enlarges the logo to 120% of its original size */
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3)); /* Enhanced shadow effect */
+}
+
+.logo-big {
+  width: 300px !important;
+  height: 300px !important;
+  max-width: 300px !important;
+  max-height: 300px !important;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure the video covers the whole square */
+  z-index: 0; /* Ensures it stays behind the logo */
+}

@@ -330,5 +330,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+/**
+ * Resume Details Accordion
+ */
+document.querySelectorAll('.details-toggle').forEach(toggle => {
+  toggle.addEventListener('click', function() {
+    this.classList.toggle('active');
+    const detailsPanel = this.nextElementSibling;
+    detailsPanel.classList.toggle('expanded');
+  });
+});
+
 
 })()

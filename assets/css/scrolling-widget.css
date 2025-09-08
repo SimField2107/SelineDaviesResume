@@ -1,0 +1,50 @@
+
+/* Widget Container */
+.scrolling-widget {
+  width: 100%;
+  background-color: #9ebccd; 
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../img/background-2.png");
+}
+
+/* Marquee Container */
+.marquee-container {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Marquee Content (Images) */
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between images */
+  animation: marquee-animation 35s linear infinite;
+}
+
+/* Marquee Images */
+.marquee-content img {
+  max-height: 80px; 
+  width: auto; 
+  display: inline-block;
+  filter: brightness(0.9); /* Slight dark effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.marquee-content img:hover {
+  transform: scale(1.1); /* Slightly enlarge */
+  filter: brightness(1.2);
+}
+
+/* Infinite Scrolling Effect */
+@keyframes marquee-animation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
+
 body {
   font-family: $font-default;
   color: $default;
@@ -11,18 +14,27 @@ a {
   text-decoration: none;
 }
 
-a:hover  {
+a:hover {
   color: lighten($primary, 10);
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-primary;
 }
+
+
 
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+
+
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -42,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0;
   }
 
-  &:hover  {
+  &:hover {
     background: lighten($primary, 8);
     color: #fff;
   }
@@ -57,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {  
+#preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -83,8 +95,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes animate-preloader {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*--------------------------------------------------------------
