@@ -167,7 +167,7 @@ body.theme-barbie {
 
 /* 4. Jam Shed */
 
-/* body.heme-jamshed{ 
+/* body.theme-jamshed{ 
   background-color: #b44569
 } */
 
@@ -192,7 +192,11 @@ body.theme-barbie {
 
 
 
-/* 4. Skittles */
+/* 5. Skittles */
+
+/* body.theme-skittles{
+  background-color: #d1b4b9; 
+} */
 
 .grid-square:nth-child(5) {
   background-image: url("../img/client-work /skittles-bg.png");
@@ -214,8 +218,11 @@ body.theme-barbie {
   pointer-events: none; 
 }
 
+/* 6. Pop works*/
 
-
+/* body.theme- {
+  background-color: ; 
+} */
 
 .grid-square:nth-child(6) {
   background-image: url("../img/client-work /popworks-bg.png");
@@ -240,6 +247,12 @@ body.theme-barbie {
 
 /* 7. Malfy Gin */
 
+
+/* body.theme- {
+  background-color: ; 
+} */
+
+
 .grid-square:nth-child(7) {
   background-image: url("../img/client-work /malfy-bg.png");
   background-size: cover;
@@ -261,6 +274,12 @@ body.theme-barbie {
 
 
 /* 8. Terlato */
+
+
+/* body.theme- {
+  background-color: ; 
+} */
+
 
 .grid-square:nth-child(8) {
   background-image: url("../img/client-work /terlato-bgg.png");
@@ -285,6 +304,12 @@ body.theme-barbie {
 
 /* 9. Laphroaig*/
 
+
+/* body.theme- {
+  background-color: ; 
+} */
+
+
 .grid-square:nth-child(9) {
   background-image: url("../img/client-work /laphroaig-bg.png");
   background-size: cover;
@@ -307,6 +332,12 @@ body.theme-barbie {
 
 /* 10. Coca-cola*/
 
+
+/* body.theme- {
+  background-color: ; 
+} */
+
+
 .grid-square:nth-child(10) {
     background-image: url("../img/client-work /coca-cola-bg.png");
     background-size: cover;
@@ -327,6 +358,12 @@ body.theme-barbie {
 }
 
 /* 11. Monster */
+
+
+/* body.theme- {
+  background-color: ; 
+} */
+
 
 .grid-square:nth-child(11) {
     background-image: url("../img/client-details/monster/monster-1.png");
@@ -349,6 +386,12 @@ body.theme-barbie {
 
 
 /* 12. Snickers */
+
+
+/* body.theme- {
+  background-color: ; 
+} */
+
 
 .grid-square:nth-child(12) {
     background-image: url("../img/client-work /snickers-bg2.png");
@@ -373,6 +416,12 @@ body.theme-barbie {
 
 /* 13. Lego */
 
+
+/* body.theme- {
+  background-color: ; 
+} */
+
+
 .grid-square:nth-child(13) {
     background-image: url("../img/client-work /lego-bg.png");
     background-size: 150%;
@@ -393,6 +442,12 @@ body.theme-barbie {
 }
 
 /* 14. Smyths */
+
+
+/* body.theme- {
+  background-color: ; 
+} */
+
 
 .grid-square:nth-child(14) {
     background-image: url("../img/client-work /smyths-bg.png");
@@ -416,6 +471,12 @@ body.theme-barbie {
 
 /* 15. Whitworths */
 
+
+/* body.theme- {
+  background-color: ; 
+} */
+
+
 .grid-square:nth-child(15) {
     background-image: url("../img/client-work /whitworths-bg.png");
     background-size: 200%;
@@ -437,6 +498,12 @@ body.theme-barbie {
 
 /* 16. Richmond */
 
+
+/* body.theme- {
+  background-color: ; 
+} */
+
+
 .grid-square:nth-child(16) {
     background-image: url("../img/client-work /richmond-bg-2.png");
     background-size: 200%;
@@ -457,6 +524,12 @@ body.theme-barbie {
 }
 
 /* 17. Rubicon */
+
+
+/* body.theme- {
+  background-color: ; 
+} */
+
 
 .grid-square:nth-child(17) {
     background-image: url("../img/client-work /rubicon-bg.png");
@@ -480,6 +553,12 @@ body.theme-barbie {
 
 /* 18. Pepsi */
 
+
+/* body.theme- {
+  background-color: ; 
+} */
+
+
 .grid-square:nth-child(18) {
     background-image: url("../img/client-work /pepsi-bg.png");
     background-size: 200%;
@@ -502,6 +581,12 @@ body.theme-barbie {
 
 /* 19. Tropicana */
 
+
+/* body.theme- {
+  background-color: ; 
+} */
+
+
 .grid-square:nth-child(19) {
     background-image: url("../img/client-work /tropicana-bg.png");
     background-size: 200%;
@@ -523,6 +608,12 @@ body.theme-barbie {
 
 
 /* 20. Doritos */
+
+
+/* body.theme- {
+  background-color: ; 
+} */
+
 
 .grid-square:nth-child(20) {
     background-image: url("../img/client-work /doritos-bg.png");
