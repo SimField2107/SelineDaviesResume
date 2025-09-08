@@ -1,4 +1,3 @@
-
 /* About  */
 
 .about .content h3 {
@@ -39,7 +38,7 @@
 }
 
 #about {
-  padding-bottom: 800px; 
+  padding-bottom: 200px; 
 }
 
 
@@ -53,7 +52,7 @@
 
 /* This is the container that creates the 3D space */
 .image-collage {
-  perspective: 1000px; /* Adjust this value to change the "depth" of the effect */
+  perspective: 1000px; /*  "depth" of the effect */
 }
 
 /* This styles the image itself for the transformation */
@@ -74,8 +73,15 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  animation: float-animation 6s ease-in-out infinite; /* Apply the animation */
+  animation: float-animation 6s ease-in-out infinite; 
 }
+
+/* Add a different duration and delay to the second card */
+.featured-project-card.alt-animation {
+  animation-duration: 7s; /* Make this one slightly slower */
+  animation-delay: -3s; /* Starts the animation off-sync */
+}
+
 
 /* The Content Inside the Card */
 .featured-project-content h4 {
@@ -126,7 +132,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-25px); /* How high it floats */
+    transform: translateY(-25px); 
   }
   100% {
     transform: translateY(0px);
@@ -143,3 +149,4 @@
     margin-bottom: 20px;
   }
 }
+
