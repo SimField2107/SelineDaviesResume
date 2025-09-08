@@ -167,6 +167,10 @@ body.theme-barbie {
 
 /* 4. Jam Shed */
 
+/* body.heme-jamshed{ 
+  background-color: #b44569
+} */
+
 .grid-square:nth-child(4) {
   background-color: #FFDAB9; 
   background-size: cover;
