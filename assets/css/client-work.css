@@ -1,6 +1,94 @@
 
+.portfolio-details .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* --- Image Slider --- */
+.portfolio-details-slider {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.portfolio-details-slider .swiper-slide img {
+  width: 100%;
+}
+
+/* --- Text Content Column --- */
+.portfolio-info {
+  padding: 0;
+  box-shadow: none;
+  background: none;
+}
+
+.portfolio-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.portfolio-info h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.portfolio-info ul li {
+  padding-bottom: 8px;
+}
+
+.portfolio-info ul strong {
+  display: inline-block;
+  min-width: 100px; /* Aligns the labels */
+  color: #333;
+}
+
+/* --- Description & Tech Stack --- */
+.portfolio-description {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.portfolio-description h5 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.portfolio-description ul {
+  list-style: disc; /* Use standard bullet points */
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.portfolio-description ul li {
+  padding-bottom: 10px;
+}
 
 /* 1. Barbie */
+/* 
+body.theme-barbie {
+  background-color: #FF65C4;
+} */
+
 
 .grid-square:nth-child(1) {
   background-color:  #FF3EB5;; 
