@@ -38,7 +38,7 @@
 }
 
 #about {
-  padding-bottom: 700px; 
+  padding-bottom: 200px; 
 }
 
 
@@ -50,18 +50,27 @@
   opacity: 0.9; 
 }
 
-/* This is the container that creates the 3D space */
+/*  container that creates the 3D space */
 .image-collage {
-  perspective: 1000px; /*  "depth" of the effect */
+  perspective: 1000px;
 }
 
 /* This styles the image itself for the transformation */
 .image-collage .img-1 {
   border-radius: 8px; 
-  transition: transform 0.1s ease-out; 
+  transition: transform 0.2s ease-out; 
   transform-style: preserve-3d;
   will-change: transform; 
+  transform: rotateX(8deg) rotateY(15deg);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.2); 
 }
+
+/* On hover, the JavaScript tilt effect will take over. This is a fallback. */
+.image-collage:hover .img-1 {
+    transform: rotateX(0deg) rotateY(0deg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
 
 /* About Section - Featured Project Floating Card   */
 
@@ -78,8 +87,8 @@
 
 /* Add a different duration and delay to the second card */
 .featured-project-card.alt-animation {
-  animation-duration: 7s; /* Make this one slightly slower */
-  animation-delay: -3s; /* Starts the animation off-sync */
+  animation-duration: 7s; 
+  animation-delay: -3s; 
 }
 
 
