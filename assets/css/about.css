@@ -5,6 +5,11 @@
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.about .content p {
+  font-size: 16px;
+
+}
+
 .about .content p.fst-italic { 
   line-height: 1.7;
   max-width: 95%; 

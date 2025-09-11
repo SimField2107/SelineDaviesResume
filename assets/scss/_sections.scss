@@ -51,13 +51,17 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
+
+
+
   .content {
     h3 {
       font-weight: 700;
       font-size: 26px;
       color: lighten($secondary, 20);
     }
-  
+
+
     ul {
       list-style: none;
       padding: 0;
@@ -79,6 +83,7 @@ section {
         line-height: 0;
       }
     }
+
     p:last-child {
       margin-bottom: 0;
     }
@@ -141,6 +146,7 @@ section {
     background: none;
     border-radius: 0;
   }
+
   .progress .skill {
     padding: 10px 0;
     margin: 0;
@@ -150,6 +156,7 @@ section {
     font-family: $font-secondary;
     color: $secondary;
   }
+
   .progress .skill .val {
     float: right;
     font-style: normal;
@@ -179,7 +186,7 @@ section {
     margin-bottom: 20px;
     color: $secondary;
   }
-  
+
   .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
@@ -243,10 +250,10 @@ section {
   }
 
   #portfolio-flters {
-    padding:0;
-    margin:0 auto 25px auto;
-    list-style:none;
-    text-align:center;
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style: none;
+    text-align: center;
     background: $white;
     border-radius: 50px;
     padding: 2px 15px;
@@ -263,7 +270,8 @@ section {
       margin-bottom: 5px;
       transition: all 0.3s ease-in-out;
 
-      &:hover, &.filter-active {
+      &:hover,
+      &.filter-active {
         color: $primary;
       }
 
@@ -279,7 +287,7 @@ section {
     overflow: hidden;
     z-index: 1;
     background: rgba($secondary, 0.8);
-    
+
     $portfolio_wrap_spacing: 30px;
 
     &::before {
@@ -295,7 +303,7 @@ section {
       opacity: 0;
     }
 
-    
+
     .portfolio-info {
       opacity: 0;
       position: absolute;
@@ -310,7 +318,7 @@ section {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
+
       &::before {
         display: block;
         content: "";
@@ -352,7 +360,7 @@ section {
         padding: 0;
         margin: 0;
       }
-      
+
     }
 
     .portfolio-links {
@@ -394,9 +402,9 @@ section {
           bottom: 15px;
           right: 15px;
         }
-        
+
       }
-      
+
     }
   }
 }
@@ -412,6 +420,7 @@ section {
     img {
       width: 100%;
     }
+
     .swiper-pagination {
       margin-top: 20px;
       position: relative;
@@ -448,16 +457,16 @@ section {
       padding: 0;
       font-size: 15px;
 
-      li +li {
+      li+li {
         margin-top: 10px;
       }
     }
-    
+
   }
 
   .portfolio-description {
     padding-top: 30px;
-    
+
     h2 {
       font-size: 26px;
       font-weight: 700;
@@ -503,23 +512,25 @@ section {
         position: absolute;
         top: 0;
         left: 0;
+
         path {
           transition: 0.5s;
           fill: #f5f5f5;
         }
       }
-  
+
     }
 
     h4 {
       font-weight: 600;
       margin: 10px 0 15px 0;
       font-size: 22px;
+
       a {
         color: $secondary;
         transition: ease-in-out 0.3s;
       }
-  
+
     }
 
     p {
@@ -543,6 +554,7 @@ section {
       i {
         color: $white;
       }
+
       path {
         fill: #47aeff;
       }
@@ -558,6 +570,7 @@ section {
       i {
         color: $white;
       }
+
       path {
         fill: #ffa76e;
       }
@@ -573,6 +586,7 @@ section {
       i {
         color: $white;
       }
+
       path {
         fill: #e80368;
       }
@@ -588,6 +602,7 @@ section {
       i {
         color: $white;
       }
+
       path {
         fill: #ffbb2c;
       }
@@ -603,6 +618,7 @@ section {
       i {
         color: $white;
       }
+
       path {
         fill: #ff5828;
       }
@@ -618,12 +634,13 @@ section {
       i {
         color: $white;
       }
+
       path {
         fill: #11dbcf;
       }
     }
   }
-  
+
 }
 
 /*--------------------------------------------------------------
@@ -635,7 +652,8 @@ section {
     margin-bottom: 40px;
   }
 
-  .testimonials-carousel, .testimonials-slider {
+  .testimonials-carousel,
+  .testimonials-slider {
     overflow: hidden;
   }
 
@@ -662,7 +680,8 @@ section {
       margin: 0 0 15px 0;
     }
 
-    .quote-icon-left, .quote-icon-right {
+    .quote-icon-left,
+    .quote-icon-right {
       color: lighten($primary, 40);
       font-size: 26px;
     }
@@ -677,7 +696,7 @@ section {
       display: inline-block;
       right: -5px;
       position: relative;
-      top:10px;
+      top: 10px;
     }
 
     p {
@@ -690,7 +709,7 @@ section {
   .swiper-pagination {
     margin-top: 20px;
     position: relative;
-  
+
     .swiper-pagination-bullet {
       width: 12px;
       height: 12px;
@@ -698,7 +717,7 @@ section {
       opacity: 1;
       border: 1px solid $primary;
     }
-  
+
     .swiper-pagination-bullet-active {
       background-color: $primary;
     }
@@ -707,7 +726,7 @@ section {
   @media (min-width: 992px) {
     .testimonial-item p {
       width: 80%;
-    } 
+    }
   }
 }
 
@@ -749,11 +768,14 @@ section {
       color: lighten($secondary, 20);
     }
 
-    .email, .phone {
+    .email,
+    .phone {
       margin-top: 40px;
     }
 
-    .email:hover, .address:hover, .phone:hover {
+    .email:hover,
+    .address:hover,
+    .phone:hover {
       i {
         background: $primary;
         color: $white;
@@ -769,7 +791,7 @@ section {
     .form-group {
       padding-bottom: 8px;
     }
-    
+
     .error-message {
       display: none;
       color: #fff;
@@ -777,11 +799,12 @@ section {
       text-align: left;
       padding: 15px;
       font-weight: 600;
-      & br + br {
+
+      & br+br {
         margin-top: 25px;
       }
     }
-    
+
     .sent-message {
       display: none;
       color: #fff;
@@ -790,13 +813,13 @@ section {
       padding: 15px;
       font-weight: 600;
     }
-  
+
     .loading {
       display: none;
       background: #fff;
       text-align: center;
       padding: 15px;
-  
+
       &:before {
         content: "";
         display: inline-block;
@@ -808,16 +831,18 @@ section {
         border-top-color: #eee;
         animation: animate-loading 1s linear infinite;
       }
-  
+
     }
 
-    input, textarea {
+    input,
+    textarea {
       border-radius: 4px;
       box-shadow: none;
       font-size: 14px;
     }
 
-    input[type="text"], input[type="email"]{
+    input[type="text"],
+    input[type="email"] {
       height: 44px;
     }
 
@@ -832,15 +857,21 @@ section {
       color: #fff;
       transition: 0.4s;
       border-radius: 50px;
+
       &:hover {
         background: lighten($primary, 8);
       }
     }
-  
+
   }
 
   @keyframes animate-loading {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
