@@ -215,7 +215,7 @@ section {
 
 /* --- Main Information Box --- */
 .portfolio-details .portfolio-info {
-    padding: 25px;
+    padding-left: 15px;
 }
 
 /* --- Project Name (e.g., "PepsoCo & Pop Works") --- */
@@ -245,7 +245,7 @@ section {
 }
 
 .portfolio-details .portfolio-info ul li {
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
 }
 
 /* --- THE LINK FIX: For the Project URL --- */
