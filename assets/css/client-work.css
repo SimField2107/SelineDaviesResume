@@ -92,7 +92,7 @@ body.theme-barbie {
 
 .grid-square:nth-child(1) {
   background-color:  #FF3EB5;; 
-  background-image: url("../img/client-work /barbie-bg.png");
+  background-image: url("../img/client-work /barbie-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative; 
@@ -199,7 +199,7 @@ body.theme-barbie {
 } */
 
 .grid-square:nth-child(5) {
-  background-image: url("../img/client-work /skittles-bg.png");
+  background-image: url("../img/client-work /skittles-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative; 
@@ -254,7 +254,7 @@ body.theme-barbie {
 
 
 .grid-square:nth-child(7) {
-  background-image: url("../img/client-work /malfy-bg.png");
+  background-image: url("../img/client-work /malfy-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative; 
@@ -282,7 +282,7 @@ body.theme-barbie {
 
 
 .grid-square:nth-child(8) {
-  background-image: url("../img/client-work /terlato-bgg.png");
+  background-image: url("../img/client-work /terlato-bgg.jpg");
   background-size: cover;
   background-position: center;
   position: relative; 
@@ -339,7 +339,7 @@ body.theme-barbie {
 
 
 .grid-square:nth-child(10) {
-    background-image: url("../img/client-work /coca-cola-bg.png");
+    background-image: url("../img/client-work /coca-cola-bg.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -422,7 +422,7 @@ body.theme-barbie {
 
 
 .grid-square:nth-child(13) {
-    background-image: url("../img/client-work /lego-bg.png");
+    background-image: url("../img/client-work /lego-bg.jpg");
     background-size: 150%;
     background-position: center;
     position: relative;
@@ -449,7 +449,7 @@ body.theme-barbie {
 
 
 .grid-square:nth-child(14) {
-    background-image: url("../img/client-work /smyths-bg.png");
+    background-image: url("../img/client-work /smyths-bg.jpg");
     background-size: 150%;
     background-position: center;
     position: relative;
@@ -531,7 +531,7 @@ body.theme-barbie {
 
 
 .grid-square:nth-child(17) {
-    background-image: url("../img/client-work /rubicon-bg.png");
+    background-image: url("../img/client-work /rubicon-bg.jpg");
     background-size: 200%;
     background-position: center;
     position: relative;
@@ -559,7 +559,7 @@ body.theme-barbie {
 
 
 .grid-square:nth-child(18) {
-    background-image: url("../img/client-work /pepsi-bg.png");
+    background-image: url("../img/client-work /pepsi-bg.jpg");
     background-size: 200%;
     background-position: center;
     position: relative;
@@ -587,7 +587,7 @@ body.theme-barbie {
 
 
 .grid-square:nth-child(19) {
-    background-image: url("../img/client-work /tropicana-bg.png");
+    background-image: url("../img/client-work /tropicana-bg.jpg");
     background-size: 200%;
     background-position: center;
     position: relative;
@@ -615,7 +615,7 @@ body.theme-barbie {
 
 
 .grid-square:nth-child(20) {
-    background-image: url("../img/client-work /doritos-bg.png");
+    background-image: url("../img/client-work /doritos-bg.jpg");
     background-size: 100%;
     background-position: center;
     position: relative;
@@ -669,7 +669,7 @@ body.theme-barbie {
 
 
 .grid-square:nth-child(22) {
-    background-image: url("../img/client-work /lipton-bg.png");
+    background-image: url("../img/client-work /lipton-bg.jpg");
     background-size: 200%;
     background-position: center;
     position: relative;
