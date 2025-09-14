@@ -1,8 +1,23 @@
+// Variables and old partials
 @import 'variables';
-
 @import 'general';
 @import 'header';
 @import 'nav';
 @import 'hero';
 @import 'sections';
+
+// Your newly migrated partials
+@import 'base';
+@import 'scrolling-widget';
+@import 'about';
+@import 'services';
+@import 'client-layout';
+@import 'client-work';
+@import 'brands';
+@import 'ai';
+@import 'projects';
+@import 'resume';
+@import 'skills';
+@import 'referrals';
+@import 'contact';
 @import 'footer';
