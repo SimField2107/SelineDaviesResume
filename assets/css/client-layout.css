@@ -6,6 +6,9 @@
   background-color: #9ebccd; 
   background-image: url("../img/background-2.png");
   padding: 40px 0; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .logo-img {
   position: relative;  
