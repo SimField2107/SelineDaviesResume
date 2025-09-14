@@ -1,8 +1,8 @@
+/* Scrolling Widget */
 
-/* Widget Container */
 .scrolling-widget {
   width: 100%;
-  background-color: #9ebccd; 
+  background-color: #9ebccd;
   padding: 20px 0;
   overflow: hidden;
   position: relative;
@@ -12,34 +12,30 @@
   background-position: center center;
 }
 
-/* Marquee Container */
 .marquee-container {
   display: flex;
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* Marquee Content (Images) */
 .marquee-content {
   display: flex;
   align-items: center;
-  gap: 40px; /* Space between images */
+  gap: 40px;
   animation: marquee-animation 35s linear infinite;
-}
 
-/* Marquee Images */
-.marquee-content img {
-  max-height: 80px; 
-  width: auto; 
-  display: inline-block;
-  filter: brightness(0.9); /* Slight dark effect */
-  transition: transform 0.3s ease-in-out;
-}
+  img {
+    max-height: 80px;
+    width: auto;
+    display: inline-block;
+    filter: brightness(0.9);
+    transition: transform 0.3s ease-in-out;
 
-/* Hover effect */
-.marquee-content img:hover {
-  transform: scale(1.1); /* Slightly enlarge */
-  filter: brightness(1.2);
+    &:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+  }
 }
 
 /* Infinite Scrolling Effect */
@@ -47,7 +43,17 @@
   from {
     transform: translateX(0%);
   }
+
   to {
     transform: translateX(-50%);
   }
+}
+
+/* Scrolling Skills Text */
+.scrolling-skills-widget .scrolling-skills {
+  font-family: Salvaje, Sans-serif;
+  font-size: 70px;
+  color: #9ebccd;
+  margin: 0;
+  padding-top: 10px;
 }

@@ -1,10 +1,7 @@
-
-
-
-/* A.I Section -  Redesign   */
+/* A.I Section */
 
 .ai-section {
-  background-color: #e9ecef; 
+  background-color: #e9ecef;
   padding: 80px 0;
 }
 
@@ -13,62 +10,78 @@
   align-items: center;
   position: relative;
   margin-bottom: 100px;
-  background: linear-gradient(to top, #f8f9fa, #ffffff); 
+  background: linear-gradient(to top, #f8f9fa, #ffffff);
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-project-image {
+    flex: 1 1 55%;
+    padding: 30px;
+
+    img {
+      width: 100%;
+      border-radius: 6px;
+    }
+  }
+
+  .ai-project-content {
+    flex: 1 1 45%;
+    padding: 40px 50px;
+
+    h4 {
+      font-family: $font-default;
+      font-size: 14px;
+      font-weight: 700;
+      color: $primary;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-family: $font-primary;
+      font-size: 36px;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 30px;
+    }
+  }
+
+  &.alt-layout {
+    flex-direction: row-reverse;
+  }
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+
+    &.alt-layout {
+      flex-direction: column;
+    }
+
+    .ai-project-content {
+      padding: 30px;
+    }
+  }
 }
 
-.ai-project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
-
-.ai-project-image {
-  flex: 1 1 55%; 
-  padding: 30px;
-}
-
-.ai-project-image img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-.ai-project-content {
-  flex: 1 1 45%; 
-  padding: 40px 50px;
-}
-
-.ai-project-content h4 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  color: #0563bb; 
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-
-.ai-project-content h3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 20px;
-}
-
-.ai-project-content p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-/* --- Dropdown Styles --- */
+/* Dropdown Styles */
 
 .btn-view-project {
-  background: #0563bb;
-  color: #fff;
+  background: $primary;
+  color: $white;
   padding: 12px 28px;
   border-radius: 50px;
   text-transform: uppercase;
@@ -76,25 +89,25 @@
   font-size: 14px;
   letter-spacing: 0.5px;
   transition: background-color 0.3s ease;
-  cursor: pointer; 
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 8px; 
-  border: none; 
-}
+  gap: 8px;
+  border: none;
 
-.btn-view-project:hover {
-  background: #0678e3;
-  color: #fff;
-}
+  &:hover {
+    background: darken($primary, 5%);
+    color: $white;
+  }
 
-.btn-view-project .icon-arrow {
-  font-size: 20px;
-  transition: transform 0.3s ease;
-}
+  .icon-arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
 
-.btn-view-project.active .icon-arrow {
-  transform: rotate(180deg);
+  &.active .icon-arrow {
+    transform: rotate(180deg);
+  }
 }
 
 .ai-project-details {
@@ -102,48 +115,31 @@
   overflow: hidden;
   transition: max-height 0.5s ease-in-out, margin-top 0.5s ease-in-out;
   margin-top: 0;
-}
 
-.ai-project-details.expanded {
-  max-height: 500px;
-  margin-top: 30px;
-}
-
-.ai-project-details h6 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #eee;
-}
-
-.ai-project-details ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.ai-project-details ul li {
-  font-size: 15px;
-  color: #555;
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-/* --- Alternating & Responsive Layout --- */
-
-.ai-project-card.alt-layout {
-  flex-direction: row-reverse;
-}
-
-@media (max-width: 991px) {
-  .ai-project-card, .ai-project-card.alt-layout {
-    flex-direction: column;
+  &.expanded {
+    max-height: 500px;
+    margin-top: 30px;
   }
-  .ai-project-content {
-    padding: 30px;
+
+  h6 {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
   }
 }
-
-

@@ -1,95 +1,91 @@
-
-/* # Services */
+/* Services Section */
 
 .services {
   background-color: #9ebccd;
+  $iconbox-colors: (
+    blue: #47aeff,
+    orange: #ffa76e,
+    pink: #e80368,
+    yellow: #ffbb2c,
+    red: #ff5828,
+    teal: #11dbcf
+  );
+
+@each $name, $color in $iconbox-colors {
+  .iconbox-#{$name} {
+    --icon-color: #{$color};
+  }
 }
 
-/* color variable for each icon */
-.services .iconbox-blue { --icon-color: #47aeff; }
-.services .iconbox-orange { --icon-color: #ffa76e; }
-.services .iconbox-pink { --icon-color: #e80368; }
-.services .iconbox-yellow { --icon-color: #ffbb2c; }
-.services .iconbox-red { --icon-color: #ff5828; }
-.services .iconbox-teal { --icon-color: #11dbcf; }
-
-/* --- General Card Styling --- */
-.services .icon-box {
+/* General Card Styling */
+.icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
-  transition: all ease-in-out 0.3s;
   background-color: #acc6d5;
   border-radius: 20px;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
-}
-
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.services .icon-box .icon svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* --- Default Icon & SVG Styling --- */
-.services .icon-box .icon i {
-  font-size: 36px;
-  position: relative;
-  color: var(--icon-color); 
-  transition: color 0.3s;
-}
-
-.services .icon-box .icon svg path {
-  fill: #f5f5f5; 
-  transition: fill 0.3s;
-}
-
-/* --- Generic Hover Effect --- */
-.services .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
-}
-
-.services .icon-box:hover .icon i {
-  color: #fff; 
-}
-
-.services .icon-box:hover .icon svg path {
-  fill: var(--icon-color); 
-}
-
-/* --- Text Styling  */
-.services .icon-box h4 {
-  font-weight: 600;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
-}
-
-.services .icon-box h4 a {
-  color: #45505b;
-  transition: ease-in-out 0.3s;
-}
-
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.services .icon-box {
+  box-shadow: 0 5px 90px 0 rgba(110, 123, 131, 0.05);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
 
-.services .icon-box:hover {
-  transform: translateY(-8px) scale(1.04); /* Lifts the card up and makes it 4% bigger */
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Adds a more pronounced shadow for depth */
-}
+  .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      path {
+        fill: #f5f5f5;
+        transition: fill 0.3s;
+      }
+    }
+
+    i {
+      font-size: 36px;
+      position: relative;
+      color: var(--icon-color);
+      transition: color 0.3s;
+    }
+  }
+
+  h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+
+    a {
+      color: $secondary;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+  p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  // hover effects 
+  &:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: $white;
+
+    .icon {
+      i {
+        color: $white;
+      }
+
+      svg path {
+        fill: var(--icon-color);
+      }
+    }
+  }
+}
+}

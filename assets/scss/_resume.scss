@@ -1,98 +1,96 @@
+/* Resume */
 
-/* # Resume */
+.resume {
 
+  .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $secondary;
+  }
 
-.resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #45505b;
-}
+  .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid $primary;
+    position: relative;
 
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #0563bb;
-  position: relative;
-}
+    h4 {
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: $font-secondary;
+      color: $primary;
+      margin-bottom: 10px;
+    }
 
+    h5 {
+      font-size: 16px;
+      background: #f7f8f9;
+      padding: 5px 15px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
+    ul {
+      padding-left: 20px;
 
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #0563bb;
-  margin-bottom: 10px;
-}
+      li {
+        padding-bottom: 10px;
+      }
+    }
 
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #f7f8f9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
+    &:last-child {
+      padding-bottom: 0;
+    }
 
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #0563bb;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50px;
+      left: -9px;
+      top: 0;
+      background: $white;
+      border: 2px solid $primary;
+    }
+  }
 }
 
 .Resume-background-section {
-  background-image: url("../img/background-about.jpg"); 
+  background-image: url("../img/background-about.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.9;  
-   padding-bottom: 800px;
+  opacity: 0.9;
+  padding-bottom: 800px;
 }
 
-/* --- Resume Accordion Details --- */
+/* Resume Accordion Details */
 .details-toggle {
   display: inline-block;
-  /* margin-top: 15px; */
   font-size: 14px;
   font-weight: 600;
-  color: #0563bb;
+  color: $primary;
   cursor: pointer;
   transition: color 0.3s;
-}
 
-.details-toggle:hover {
-  color: #0678e3;
-}
+  &:hover {
+    color: lighten($primary, 5%);
+  }
 
-.details-toggle i {
-  display: inline-block;
-  transition: transform 0.3s;
-}
+  i {
+    display: inline-block;
+    transition: transform 0.3s;
+  }
 
-.details-toggle.active i {
-  transform: rotate(180deg);
+  &.active i {
+    transform: rotate(180deg);
+  }
 }
 
 .resume-details {
@@ -100,9 +98,9 @@
   overflow: hidden;
   transition: max-height 0.4s ease-in-out, margin-top 0.4s ease-in-out;
   margin-top: 0;
-}
 
-.resume-details.expanded {
-  max-height: 500px; /* A large value to ensure all content fits */
-  margin-top: 15px;
+  &.expanded {
+    max-height: 500px;
+    margin-top: 15px;
+  }
 }
