@@ -38,7 +38,7 @@ Main JS
     el.addEventListener('scroll', listener)
   }
 
-  /**  Navbar links active state on scroll */
+  /** Navbar links active state on scroll */
 
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
@@ -206,7 +206,7 @@ Main JS
     height: '90vh'
   });
 
-/**
+  /**
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {
@@ -221,7 +221,7 @@ Main JS
       type: 'bullets',
       clickable: true
     },
-   
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -264,29 +264,6 @@ Main JS
   new PureCounter();
 
   /**
-   * AI Project Card Expander
-   */
-  document.addEventListener('DOMContentLoaded', () => {
-    const learnMoreButtons = document.querySelectorAll('.ai-section .btn-view-project');
-
-    learnMoreButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Find the details panel within the same project card
-        const detailsPanel = button.nextElementSibling;
-        detailsPanel.classList.toggle('expanded');
-        button.classList.toggle('active');
-
-        // Change the button text and icon
-        if (detailsPanel.classList.contains('expanded')) {
-          button.innerHTML = 'Show Less <i class="icon-arrow bx bx-chevron-up"></i>';
-        } else {
-          button.innerHTML = 'Learn More <i class="icon-arrow bx bx-chevron-down"></i>';
-        }
-      });
-    });
-  });
-
-  /**
    * Portfolio Accordion Gallery
    */
   const accordionPanels = document.querySelectorAll('.accordion-panel');
@@ -301,45 +278,75 @@ Main JS
   });
 
   /**
- * About Section 3D Tilt Effect
- */
-document.addEventListener('DOMContentLoaded', () => {
-  const tiltContainer = document.querySelector('.image-collage');
-  if (tiltContainer) {
-    const tiltElement = tiltContainer.querySelector('.img-1');
-    const maxTilt = 15; // Max tilt in degrees. Lower for a more subtle effect.
+   * About Section 3D Tilt Effect
+   */
+  document.addEventListener('DOMContentLoaded', () => {
+    const tiltContainer = document.querySelector('.image-collage');
+    if (tiltContainer) {
+      const tiltElement = tiltContainer.querySelector('.img-1');
+      const maxTilt = 15; // Max tilt in degrees. Lower for a more subtle effect.
 
-    tiltContainer.addEventListener('mousemove', (e) => {
-      const rect = tiltContainer.getBoundingClientRect();
-      const x = e.clientX - rect.left; 
-      const y = e.clientY - rect.top;  
+      tiltContainer.addEventListener('mousemove', (e) => {
+        const rect = tiltContainer.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
 
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
 
-      const tiltX = (y - centerY) / centerY * -maxTilt; 
-      const tiltY = (x - centerX) / centerX * maxTilt;
+        const tiltX = (y - centerY) / centerY * -maxTilt;
+        const tiltY = (x - centerX) / centerX * maxTilt;
 
-      tiltElement.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-    });
+        tiltElement.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+      });
 
-    tiltContainer.addEventListener('mouseleave', () => {
-      // Reset the transform when the mouse leaves
-      tiltElement.style.transform = 'rotateX(0deg) rotateY(0deg)';
-    });
-  }
-});
-
-/**
- * Resume Details Accordion
- */
-document.querySelectorAll('.details-toggle').forEach(toggle => {
-  toggle.addEventListener('click', function() {
-    this.classList.toggle('active');
-    const detailsPanel = this.nextElementSibling;
-    detailsPanel.classList.toggle('expanded');
+      tiltContainer.addEventListener('mouseleave', () => {
+        // Reset the transform when the mouse leaves
+        tiltElement.style.transform = 'rotateX(0deg) rotateY(0deg)';
+      });
+    }
   });
-});
 
+  /**
+   * Resume Details Accordion
+   */
+  document.querySelectorAll('.details-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      this.classList.toggle('active');
+      const detailsPanel = this.nextElementSibling;
+      detailsPanel.classList.toggle('expanded');
+    });
+  });
+  
+  // --- CORRECTED & UNIFIED SCRIPT FOR ALL PROJECT CARDS ---
+  /**
+   * Universal Project Card Expander
+   */
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select ALL project buttons on the page, not just in a specific section
+    const projectButtons = document.querySelectorAll('.btn-view-project');
+  
+    projectButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Find the parent container to safely locate the details panel
+        const contentContainer = this.closest('.ai-project-content');
+        if (!contentContainer) return; // Exit if the card structure is wrong
+  
+        const detailsPanel = contentContainer.querySelector('.ai-project-details');
+        if (!detailsPanel) return; // Exit if the details panel isn't found
+  
+        // Toggle the classes
+        detailsPanel.classList.toggle('expanded');
+        this.classList.toggle('active');
+  
+        // Check the state and update the button's text and icon
+        if (detailsPanel.classList.contains('expanded')) {
+          this.innerHTML = 'Show Less <i class="icon-arrow bx bx-chevron-up"></i>';
+        } else {
+          this.innerHTML = 'Learn More <i class="icon-arrow bx bx-chevron-down"></i>';
+        }
+      });
+    });
+  });
 
 })()
