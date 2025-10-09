@@ -645,11 +645,11 @@ h6 {
   transform-style: preserve-3d;
   will-change: transform;
   transform: rotateX(8deg) rotateY(15deg);
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0);
 }
 .image-collage:hover .img-1 {
   transform: rotateX(0deg) rotateY(0deg);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
 }
 
 /* Featured Project Floating Card */
