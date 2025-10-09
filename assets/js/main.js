@@ -318,35 +318,41 @@ Main JS
     });
   });
   
-  // --- CORRECTED & UNIFIED SCRIPT FOR ALL PROJECT CARDS ---
-  /**
-   * Universal Project Card Expander
-   */
-  document.addEventListener('DOMContentLoaded', () => {
-    // Select ALL project buttons on the page, not just in a specific section
-    const projectButtons = document.querySelectorAll('.btn-view-project');
-  
-    projectButtons.forEach(button => {
+/**
+ * Universal Project Card Expander
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  // Select only the buttons intended to be toggles
+  const toggleButtons = document.querySelectorAll('.js-details-toggle');
+
+  toggleButtons.forEach(button => {
+    // We only attach the click listener to the toggle buttons
+    if (button.tagName === 'BUTTON') { // Ensure this only applies to actual buttons
       button.addEventListener('click', function() {
         // Find the parent container to safely locate the details panel
         const contentContainer = this.closest('.ai-project-content');
         if (!contentContainer) return; // Exit if the card structure is wrong
-  
+
         const detailsPanel = contentContainer.querySelector('.ai-project-details');
         if (!detailsPanel) return; // Exit if the details panel isn't found
-  
+
         // Toggle the classes
         detailsPanel.classList.toggle('expanded');
         this.classList.toggle('active');
-  
+
         // Check the state and update the button's text and icon
-        if (detailsPanel.classList.contains('expanded')) {
-          this.innerHTML = 'Show Less <i class="icon-arrow bx bx-chevron-up"></i>';
-        } else {
-          this.innerHTML = 'Learn More <i class="icon-arrow bx bx-chevron-down"></i>';
-        }
+        const icon = detailsPanel.classList.contains('expanded') 
+            ? "<i class='icon-arrow bx bx-chevron-up'></i>" 
+            : "<i class='icon-arrow bx bx-chevron-down'></i>";
+        
+        const text = detailsPanel.classList.contains('expanded') 
+            ? 'Show Less' 
+            : 'Learn More';
+
+        this.innerHTML = `${text} ${icon}`;
       });
-    });
+    }
   });
+});
 
 })()
