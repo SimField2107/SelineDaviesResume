@@ -685,7 +685,61 @@ body.theme-barbie {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 245, 189, 0.7);
+  background-color: rgba(200, 181, 68, 0.647);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 23. Dolmio */
+
+
+/* body.theme-dolmio {
+  background-color: #0e7f16c6; 
+} */
+
+
+.grid-square:nth-child(23) {
+  background-image: url("../img/client-work /dolmio-bg.webp");
+  background-size: 200%;
+  background-position: center;
+  position: relative;
+}
+
+.grid-square:nth-child(23)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 195, 98, 0.7);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 24. Diet Coke */
+
+
+/* body.theme-diet-coke {
+  background-color: #0e7f16c6; 
+} */
+
+
+.grid-square:nth-child(24) {
+  background-image: url("../img/client-work /diet-coke-bg.webp");
+  background-size: 150%;
+  background-position: center;
+  position: relative;
+}
+
+.grid-square:nth-child(24)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(191, 218, 200, 0.583);
   z-index: 1;
   pointer-events: none;
 }
