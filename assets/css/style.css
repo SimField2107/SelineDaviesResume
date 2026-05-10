@@ -417,125 +417,6 @@ h6 {
     transition-delay: 0 !important;
   }
 }
-/* Layout: Header & Navigation */
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 15px;
-  overflow-y: auto;
-}
-@media (max-width: 991px) {
-  #header {
-    width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
-    left: -300px;
-  }
-}
-
-.nav-menu {
-  padding: 0;
-  display: block;
-}
-.nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.nav-menu > ul > li {
-  position: relative;
-  white-space: nowrap;
-}
-.nav-menu a,
-.nav-menu a:focus {
-  display: flex;
-  align-items: center;
-  color: #45505b;
-  padding: 10px 18px;
-  margin-bottom: 8px;
-  transition: 0.3s;
-  font-size: 15px;
-  border-radius: 50px;
-  background: #f2f3f5;
-  height: 56px;
-  width: 100%;
-  overflow: hidden;
-}
-.nav-menu a i,
-.nav-menu a:focus i {
-  font-size: 20px;
-}
-.nav-menu a span,
-.nav-menu a:focus span {
-  padding: 0 5px 0 7px;
-  color: #45505b;
-}
-.nav-menu a:hover,
-.nav-menu .active,
-.nav-menu .active:focus,
-.nav-menu li:hover > a {
-  color: #fff;
-  background: #0563bb;
-}
-.nav-menu a:hover span,
-.nav-menu .active span,
-.nav-menu .active:focus span,
-.nav-menu li:hover > a span {
-  color: #fff;
-}
-.nav-menu li:hover > a {
-  width: 100%;
-}
-.nav-menu li:hover > a span {
-  display: block;
-}
-@media (min-width: 992px) {
-  .nav-menu a,
-  .nav-menu a:focus {
-    width: 56px;
-  }
-  .nav-menu a span,
-  .nav-menu a:focus span {
-    display: none;
-    color: #fff;
-  }
-}
-
-/* Mobile Navigation */
-.mobile-nav-toggle {
-  position: fixed;
-  right: 10px;
-  top: 10px;
-  z-index: 9998;
-  border: 0;
-  background: none;
-  font-size: 28px;
-  transition: all 0.4s;
-  outline: none !important;
-  line-height: 0;
-  cursor: pointer;
-  border-radius: 50px;
-  padding: 5px;
-}
-.mobile-nav-toggle i {
-  color: #45505b;
-}
-
-.mobile-nav-active {
-  overflow: hidden;
-}
-.mobile-nav-active #header {
-  left: 0;
-}
-.mobile-nav-active .mobile-nav-toggle {
-  color: #fff;
-  background-color: #0563bb;
-}
-
 /* Scrolling Widget */
 .scrolling-widget {
   width: 100%;
@@ -723,7 +604,6 @@ h6 {
 /* Services Section */
 .services {
   background-color: #9ebccd;
-  /* General Card Styling */
 }
 .services .iconbox-blue {
   --icon-color: #47aeff;
@@ -742,6 +622,9 @@ h6 {
 }
 .services .iconbox-teal {
   --icon-color: #11dbcf;
+}
+.services {
+  /* General Card Styling */
 }
 .services .icon-box {
   text-align: center;
@@ -819,8 +702,7 @@ h6 {
   position: relative;
   width: 200px;
   height: 200px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.15));
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
   z-index: 2;
@@ -855,8 +737,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 0;
 }
 
@@ -915,7 +796,6 @@ h6 {
 .portfolio-info ul strong {
   display: inline-block;
   min-width: 100px;
-  /* Aligns the labels */
   color: #333;
 }
 
@@ -935,7 +815,6 @@ h6 {
 
 .portfolio-description ul {
   list-style: disc;
-  /* Use standard bullet points */
   padding-left: 20px;
   font-size: 14px;
   line-height: 1.7;
@@ -947,13 +826,9 @@ h6 {
 }
 
 /* 1. Barbie */
-/* 
-body.theme-barbie {
-  background-color: #FF65C4;
-} */
 .grid-square:nth-child(1) {
   background-color: #FF3EB5;
-  background-image: url("../img/client-work /barbie-bg.jpg");
+  background-image: url("../img/client-work/barbie-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -971,14 +846,9 @@ body.theme-barbie {
 }
 
 /* 2. Minor Figures */
-/* body.theme-minor-figures{
-  background-color:#3DC3EB
-} */
 .grid-square:nth-child(2) {
   background-color: #09428f;
-  /* #3fc3eb; Minor Figures pale blue */
-  /* #09428f dark blue  */
-  background-image: url("../img/client-work /minor-figures-bg.png");
+  background-image: url("../img/client-work/minor-figures-bg.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -996,11 +866,8 @@ body.theme-barbie {
 }
 
 /* 3. Mikes Hard Lemonade */
-/* body.theme-mikes{
-  background-color:#F1BA43
-} */
 .grid-square:nth-child(3) {
-  background-image: url("../img/client-work /mikes-bg.png");
+  background-image: url("../img/client-work/mikes-bg.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1018,9 +885,6 @@ body.theme-barbie {
 }
 
 /* 4. Jam Shed */
-/* body.theme-jamshed{ 
-  background-color: #b44569
-} */
 .grid-square:nth-child(4) {
   background-color: #FFDAB9;
   background-size: cover;
@@ -1037,16 +901,12 @@ body.theme-barbie {
   height: 100%;
   background-color: rgba(213, 0, 89, 0.681);
   z-index: 1;
-  /* Higher than video but lower than logo */
   pointer-events: none;
 }
 
 /* 5. Skittles */
-/* body.theme-skittles{
-  background-color: #d1b4b9; 
-} */
 .grid-square:nth-child(5) {
-  background-image: url("../img/client-work /skittles-bg.jpg");
+  background-image: url("../img/client-work/skittles-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1064,12 +924,9 @@ body.theme-barbie {
   pointer-events: none;
 }
 
-/* 6. Pop works*/
-/* body.theme-popworks {
-  background-color: #F8CADA ; 
-} */
+/* 6. Pop works */
 .grid-square:nth-child(6) {
-  background-image: url("../img/client-work /popworks-bg.png");
+  background-image: url("../img/client-work/popworks-bg.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1088,11 +945,8 @@ body.theme-barbie {
 }
 
 /* 7. Malfy Gin */
-/* body.theme-malfy {
-  background-color: #34B7D8; 
-} */
 .grid-square:nth-child(7) {
-  background-image: url("../img/client-work /malfy-bg.jpg");
+  background-image: url("../img/client-work/malfy-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1111,11 +965,8 @@ body.theme-barbie {
 }
 
 /* 8. Terlato */
-/* body.theme-terlato {
-  background-color: #EFCF70; 
-} */
 .grid-square:nth-child(8) {
-  background-image: url("../img/client-work /terlato-bgg.jpg");
+  background-image: url("../img/client-work/terlato-bgg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1134,11 +985,8 @@ body.theme-barbie {
 }
 
 /* 9. Laphroaig */
-/* body.theme-laphroaig {
-  background-color: #15473480; 
-} */
 .grid-square:nth-child(9) {
-  background-image: url("../img/client-work /laphroaig-bg.png");
+  background-image: url("../img/client-work/laphroaig-bg.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1156,12 +1004,9 @@ body.theme-barbie {
   pointer-events: none;
 }
 
-/* 10. Coca-cola*/
-/* body.theme-cocacola {
-  background-color: #ff0000d1; 
-} */
+/* 10. Coca-cola */
 .grid-square:nth-child(10) {
-  background-image: url("../img/client-work /coca-cola-bg.jpg");
+  background-image: url("../img/client-work/coca-cola-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1180,9 +1025,6 @@ body.theme-barbie {
 }
 
 /* 11. Monster */
-/* body.theme-monster {
-  background-color: #94c11f ; 
-} */
 .grid-square:nth-child(11) {
   background-image: url("../img/client-details/monster/monster-1.png");
   background-size: cover;
@@ -1203,11 +1045,8 @@ body.theme-barbie {
 }
 
 /* 12. Snickers */
-/* body.theme-snickers {
-  background-color: #FAB001 ; 
-} */
 .grid-square:nth-child(12) {
-  background-image: url("../img/client-work /snickers-bg2.png");
+  background-image: url("../img/client-work/snickers-bg2.png");
   background-size: 150%;
   background-position: center;
   position: relative;
@@ -1226,11 +1065,8 @@ body.theme-barbie {
 }
 
 /* 13. Lego */
-/* body.theme-lego {
-  background-color: #0086af ; 
-} */
 .grid-square:nth-child(13) {
-  background-image: url("../img/client-work /lego-bg.jpg");
+  background-image: url("../img/client-work/lego-bg.jpg");
   background-size: 150%;
   background-position: center;
   position: relative;
@@ -1249,11 +1085,8 @@ body.theme-barbie {
 }
 
 /* 14. Smyths */
-/* body.theme- {
-  background-color: #6ad1ea ; 
-} */
 .grid-square:nth-child(14) {
-  background-image: url("../img/client-work /smyths-bg.jpg");
+  background-image: url("../img/client-work/smyths-bg.jpg");
   background-size: 150%;
   background-position: center;
   position: relative;
@@ -1267,17 +1100,13 @@ body.theme-barbie {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 134, 175, 0.7);
-  /* background-color: rgba(245, 236, 62, 0.7); */
   z-index: 1;
   pointer-events: none;
 }
 
 /* 15. Whitworths */
-/* body.theme-whitworths {
-  background-color: #6ad1ea ; 
-} */
 .grid-square:nth-child(15) {
-  background-image: url("../img/client-work /whitworths-bg.png");
+  background-image: url("../img/client-work/whitworths-bg.png");
   background-size: 200%;
   background-position: center;
   position: relative;
@@ -1296,11 +1125,8 @@ body.theme-barbie {
 }
 
 /* 16. Richmond */
-/* body.theme-richmond {
-  background-color: #0e7f16c6; 
-} */
 .grid-square:nth-child(16) {
-  background-image: url("../img/client-work /richmond-bg-2.png");
+  background-image: url("../img/client-work/richmond-bg-2.png");
   background-size: 200%;
   background-position: center;
   position: relative;
@@ -1319,11 +1145,8 @@ body.theme-barbie {
 }
 
 /* 17. Rubicon */
-/* body.theme-rubicon {
-  background-color: #ffb300e1 ; 
-} */
 .grid-square:nth-child(17) {
-  background-image: url("../img/client-work /rubicon-bg.jpg");
+  background-image: url("../img/client-work/rubicon-bg.jpg");
   background-size: 200%;
   background-position: center;
   position: relative;
@@ -1342,11 +1165,8 @@ body.theme-barbie {
 }
 
 /* 18. Pepsi */
-/* body.theme-pepsi {
-  background-color: #001b89a0 ; 
-} */
 .grid-square:nth-child(18) {
-  background-image: url("../img/client-work /pepsi-bg.jpg");
+  background-image: url("../img/client-work/pepsi-bg.jpg");
   background-size: 200%;
   background-position: center;
   position: relative;
@@ -1365,11 +1185,8 @@ body.theme-barbie {
 }
 
 /* 19. Tropicana */
-/* body.theme-tropicana {
-  background-color:#006C34 ; 
-} */
 .grid-square:nth-child(19) {
-  background-image: url("../img/client-work /tropicana-bg.jpg");
+  background-image: url("../img/client-work/tropicana-bg.jpg");
   background-size: 200%;
   background-position: center;
   position: relative;
@@ -1388,11 +1205,8 @@ body.theme-barbie {
 }
 
 /* 20. Doritos */
-/* body.theme-doritos {
-  background-color: #82E5CD; 
-} */
 .grid-square:nth-child(20) {
-  background-image: url("../img/client-work /doritos-bg.jpg");
+  background-image: url("../img/client-work/doritos-bg.jpg");
   background-size: 100%;
   background-position: center;
   position: relative;
@@ -1411,11 +1225,8 @@ body.theme-barbie {
 }
 
 /* 21. Jammy Drop */
-/* body.theme-jamshed{ 
-  background-color: #b44569
-} */
 .grid-square:nth-child(21) {
-  background-image: url("../img/client-work /jammy-bg-1.png");
+  background-image: url("../img/client-work/jammy-bg-1.png");
   background-color: #FFDAB9;
   background-size: cover;
   background-position: center;
@@ -1435,11 +1246,8 @@ body.theme-barbie {
 }
 
 /* 22. Lipton */
-/* body.theme-richmond {
-  background-color: #0e7f16c6; 
-} */
 .grid-square:nth-child(22) {
-  background-image: url("../img/client-work /lipton-bg.jpg");
+  background-image: url("../img/client-work/lipton-bg.jpg");
   background-size: 200%;
   background-position: center;
   position: relative;
@@ -1458,11 +1266,8 @@ body.theme-barbie {
 }
 
 /* 23. Dolmio */
-/* body.theme-dolmio {
-  background-color: #0e7f16c6; 
-} */
 .grid-square:nth-child(23) {
-  background-image: url("../img/client-work /dolmio-bg.webp");
+  background-image: url("../img/client-work/dolmio-bg.webp");
   background-size: 200%;
   background-position: center;
   position: relative;
@@ -1481,11 +1286,8 @@ body.theme-barbie {
 }
 
 /* 24. Diet Coke */
-/* body.theme-diet-coke {
-  background-color: #0e7f16c6; 
-} */
 .grid-square:nth-child(24) {
-  background-image: url("../img/client-work /diet-coke-bg.webp");
+  background-image: url("../img/client-work/diet-coke-bg.webp");
   background-size: 150%;
   background-position: center;
   position: relative;
@@ -1851,8 +1653,7 @@ body.theme-barbie {
 .portfolio-details .portfolio-details-slider .swiper-slide img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .portfolio-details .portfolio-details-slider .swiper-button-next,
 .portfolio-details .portfolio-details-slider .swiper-button-prev {
@@ -2268,4 +2069,4 @@ body.theme-barbie {
 }
 #footer .credits {
   font-size: 13px;
-}/*# sourceMappingURL=style.css.map */
+}
